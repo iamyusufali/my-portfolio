@@ -17,7 +17,6 @@ function App() {
           rel="noopener noreferrer"
         >
           Till then you can Learn React...
-          Which I'm using to build this Portfolio.
         </a>
       </header>
     </div>
