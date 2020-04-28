@@ -1,25 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-        Portfolio is under construction
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Till then you can Learn React...
-        </a>
-      </header>
-    </div>
+    <header>
+      <h1>Hi, My name is Yusuf Ali</h1>
+      <h3>Right now everything is under construction.</h3>
+    </header>
   );
 }
 
