@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+        Portfolio is under construction
         </p>
         <a
           className="App-link"
@@ -16,7 +16,8 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Till then you can Learn React...
+          Which I'm using to build this Portfolio.
         </a>
       </header>
     </div>
