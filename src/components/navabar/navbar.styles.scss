@@ -1,0 +1,19 @@
+.nav-container {
+  width: 70vw;
+  height: 5rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // border: 2px solid white;
+
+  & h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #fff;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
