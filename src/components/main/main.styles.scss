@@ -1,0 +1,49 @@
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 75vw;
+  margin: auto;
+  margin-top: 8rem;
+  // border: 2px solid white;
+
+  .intro-container {
+    & h3 {
+      color: #fff;
+      font-size: 2.5rem;
+      opacity: 0.8;
+      margin-bottom: 1.5rem;
+    }
+
+    & h1,
+    h2 {
+      color: white;
+      font-size: 10.5rem;
+      font-weight: 800;
+    }
+
+    & h2 {
+      color: #f1ff77;
+      // opacity: 0.8;
+    }
+  }
+
+  img {
+    width: 38rem;
+    height: 25rem;
+    opacity: 0.7;
+  }
+
+  .title-container {
+    width: 100%;
+
+    margin-top: 2rem;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 500;
+      color: #d9f3a9;
+      opacity: 0.9;
+    }
+  }
+}

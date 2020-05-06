@@ -1,15 +1,15 @@
 import React from 'react';
 
-import './homepage.styles.scss';
-
 import Navbar from '../../components/navbar/navbar.component';
-import Intro from '../../components/intro/intro.component';
+import Main from '../../components/main/main.component';
+
+import './homepage.styles.scss';
 
 const HomePage = () => {
   return (
     <div className="homepage">
       <Navbar />
-      <Intro />
+      <Main />
     </div>
   );
 };
