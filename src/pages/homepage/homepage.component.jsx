@@ -2,7 +2,7 @@ import React from 'react';
 
 import './homepage.styles.scss';
 
-import Navbar from '../../components/navabar/navbar.component';
+import Navbar from '../../components/navbar/navbar.component';
 import Intro from '../../components/intro/intro.component';
 
 const HomePage = () => {

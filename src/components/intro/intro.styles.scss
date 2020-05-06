@@ -1,7 +1,7 @@
 .intro-container {
   width: 75vw;
   margin: auto;
-  padding-top: 8rem;
+  margin-top: 8rem;
   // border: 2px solid white;
 
   & h3 {
@@ -11,7 +11,8 @@
     margin-bottom: 1.5rem;
   }
 
-  & h1, h2 {
+  & h1,
+  h2 {
     color: white;
     font-size: 10.5rem;
     font-weight: 800;
