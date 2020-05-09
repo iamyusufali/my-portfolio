@@ -1,12 +1,17 @@
 import React from 'react';
 
-import HomePage from './pages/homepage/homepage.component';
+import Navbar from './components/navbar/navbar.component';
 
-import './App.css';
+import Main from './components/main/main.component';
+
+import './App.scss';
 
 function App() {
   return (
-    <HomePage />
+    <div>
+      <Navbar />
+      <Main />
+    </div>
   );
 }
 

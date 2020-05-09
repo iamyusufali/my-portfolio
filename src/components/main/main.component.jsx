@@ -5,15 +5,19 @@ import './main.styles.scss';
 
 const Main = () => {
   return (
-    <div className="main-container">
+    <main>
       <div className="intro-container">
         <h3>Hey, I'm</h3>
-        <h1>Yusuf</h1>
-        <h2>Ali</h2>
-        <h4>A Fanatic Web Developer</h4>
+        <div className="name">
+          <h1>Yusuf</h1>
+          <h2>Ali</h2>
+        </div>
+        <h4>A Front End Dev</h4>
       </div>
-      <img alt="developer" src={Logo} />
-    </div>
+      <div className="image-container">
+        <img alt="dev" src={Logo} />
+      </div>
+    </main>
   );
 };
 
