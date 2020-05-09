@@ -22,8 +22,6 @@ const Navbar = () => {
           className="hamburger"
           isOpen={isHamOpen}
           menuClicked={() => setHamStatus(!isHamOpen)}
-          width={50}
-          height={35}
           strokeWidth={1}
           rotate={0}
           color="white"
