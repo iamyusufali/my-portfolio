@@ -9,10 +9,6 @@ nav {
   padding: 1rem 2rem 0 2rem;
   background-color: $homepagecolor;
 
-  .hamburger {
-    z-index: 2;
-  }
-
   .nav-links {
     width: 100vw;
     height: 100%;
@@ -27,7 +23,7 @@ nav {
     left: 0;
     z-index: 1;
     clip-path: circle(100px at 90% -20%);
-    transition: all 1s ease-in;
+    transition: all 1s ease;
 
     &.open {
       clip-path: circle(2200px at 90% -12%);

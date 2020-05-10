@@ -1,34 +1,32 @@
 import React, { useState } from 'react';
 
-import HamburgerMenu from 'react-hamburger-menu';
-
+import './hamburgers/hamburgers.scss';
 import './navbar.styles.scss';
 
 const Navbar = () => {
   const [isHamOpen, setHamStatus] = useState(false);
 
-  let navClass = 'nav-links',
+  let hamClass = 'hamburger hamburger--elastic',
+    navClass = 'nav-links',
     linkClass = '';
 
   if (isHamOpen) {
+    hamClass = 'hamburger hamburger--elastic is-active';
     navClass = 'nav-links open';
     linkClass = 'fade';
   }
 
   return (
     <nav>
-      <HamburgerMenu
-        className="hamburger"
-        isOpen={isHamOpen}
-        menuClicked={() => setHamStatus(!isHamOpen)}
-        strokeWidth={1}
-        width={30}
-        height={25}
-        rotate={0}
-        color="white"
-        borderRadius={0}
-        animationDuration={0.6}
-      />
+      <div
+        className="ham-icon"
+        class={hamClass}
+        onClick={() => setHamStatus(!isHamOpen)}
+      >
+        <div class="hamburger-box">
+          <div class="hamburger-inner"></div>
+        </div>
+      </div>
       <ul className={navClass}>
         <li className={linkClass}>
           <a href="#">About Me</a>
