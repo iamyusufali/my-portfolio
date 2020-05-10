@@ -3,33 +3,57 @@
 main {
   background-color: $homepagecolor;
   clip-path: polygon(100% 0, 100% 84%, 0 100%, 0 0);
-  height: 80vh;
+  height: 30rem;
   padding: 3rem 2rem 0 2rem;
 
   .intro-container {
     h3,
     h4 {
       color: $white;
-      font-size: 1.2rem;
-      margin-bottom: .5rem;
+      font-size: 1.2em;
+      margin-bottom: 0.5em;
       opacity: 0.9;
     }
 
     h4 {
-      font-size: 1.4rem;
-      margin-top: .5rem;
+      font-size: 1.4em;
+      margin-top: 0.5em;
     }
 
     .name {
       h1,
       h2 {
-        color: $white;
-        font-size: 4rem;
+        color: #fff;
+        font-size: 4.5em;
         font-weight: 800;
       }
 
       h2 {
         color: #f1ff73;
+      }
+    }
+  }
+}
+
+// Responsive styles
+@media screen and (min-height: 580px) {
+  main {
+    height: 35rem;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  main {
+    .intro-container {
+      h4 {
+        font-size: 1.6em;
+      }
+
+      .name {
+        h1,
+        h2 {
+          font-size: 5em;
+        }
       }
     }
   }
