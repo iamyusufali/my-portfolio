@@ -1,24 +1,23 @@
 @import '../../_Global_Styles/colors';
 
 main {
-  display: flex;
-  flex-direction: column;
-  height: calc(100vh - 100px);
-  padding: 0 2rem;
   background-color: $homepagecolor;
   clip-path: polygon(100% 0, 100% 84%, 0 100%, 0 0);
+  height: 80vh;
+  padding: 3rem 2rem 0 2rem;
 
   .intro-container {
-    margin-top: 4rem;
-    h3, h4 {
+    h3,
+    h4 {
       color: $white;
       font-size: 1.2rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: .5rem;
       opacity: 0.9;
     }
 
     h4 {
-      margin-top: 2rem;
+      font-size: 1.4rem;
+      margin-top: .5rem;
     }
 
     .name {
@@ -30,14 +29,8 @@ main {
       }
 
       h2 {
-        color: #f1ff77;
+        color: #f1ff73;
       }
-    }
-  }
-
-  .image-container {
-    img {
-      display: none;
     }
   }
 }

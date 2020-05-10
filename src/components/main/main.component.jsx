@@ -12,10 +12,7 @@ const Main = () => {
           <h1>Yusuf</h1>
           <h2>Ali</h2>
         </div>
-        <h4>A Front End Dev</h4>
-      </div>
-      <div className="image-container">
-        <img alt="dev" src={Logo} />
+        <h4>a Front End Dev</h4>
       </div>
     </main>
   );
