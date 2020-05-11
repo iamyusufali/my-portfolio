@@ -1,14 +1,12 @@
-@import '../../_Global_Styles/colors';
-
 nav {
+  width: 100%;
+  height: 5rem;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  position: relative;
-  height: 10vh;
-  padding: 1rem 2rem 0 2rem;
-  background-color: $homepagecolor;
-  
+  position: absolute;
+  padding-right: 2rem;
+
   .nav-links {
     width: 100vw;
     height: 100%;
@@ -18,19 +16,19 @@ nav {
     justify-content: space-evenly;
     list-style: none;
     background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
     clip-path: circle(100px at 90% -20%);
-    transition: all .8s ease-in;
+    transition: all 0.8s ease-in;
 
     &.open {
       clip-path: circle(2200px at 90% -12%);
     }
 
     li a {
-      color: $homepagecolor;
+      color: #005dff;
       text-decoration: none;
       font-size: 1.5rem;
     }

@@ -1,15 +1,16 @@
-@import '../../_Global_Styles/colors';
+header {
+  min-height: 35rem;
+  background-color: #005dff;
+  clip-path: polygon(100% 0, 100% 84%, 0 100%, 0 0);
+  padding: 0 2rem;
+}
 
 main {
-  background-color: $homepagecolor;
-  clip-path: polygon(100% 0, 100% 84%, 0 100%, 0 0);
-  height: 30rem;
-  padding: 3rem 2rem 0 2rem;
-
+  padding-top: 5rem;
   .intro-container {
     h3,
     h4 {
-      color: $white;
+      color: #fff;
       font-size: 1.2em;
       margin-bottom: 0.5em;
       opacity: 0.9;
@@ -33,15 +34,15 @@ main {
       }
     }
   }
-}
 
-// Responsive styles
-@media screen and (min-height: 580px) {
-  main {
-    height: 35rem;
+  .image-container {
+    img {
+      display: none;
+    }
   }
 }
 
+// Responsive styles
 @media screen and (min-width: 360px) {
   main {
     .intro-container {
@@ -54,6 +55,23 @@ main {
         h2 {
           font-size: 5em;
         }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 575px) {
+  main {
+    display: flex;
+    justify-content: space-between;
+
+    .image-container {
+      height: 10rem;
+      margin-top: 5rem;
+
+      img {
+        display: block;
+        width: 15rem;
       }
     }
   }

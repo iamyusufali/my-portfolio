@@ -1,14 +1,15 @@
 import React from 'react';
 
-import Main from './components/main/main.component';
+import Navbar from './components/navbar/navbar.component';
+import Header from './components/header/header.component';
 
 import './App.scss';
-import Navbar from './components/navbar/navbar.component';
 
 function App() {
   return (
     <div>
-      <Main />
+      <Navbar />
+      <Header />
     </div>
   );
 }
