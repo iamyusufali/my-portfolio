@@ -1,34 +1,36 @@
+@import '../../_Global_Styles/variables';
+
 nav {
   width: 100%;
   height: 5rem;
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  position: absolute;
-  padding-right: 2rem;
+  padding: $mobilepadding;
 
   .nav-links {
     width: 100vw;
     height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     list-style: none;
-    background-color: rgba(255, 255, 255, 0.9);
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    left: 0;
+    background-color: $menucolor;
     clip-path: circle(100px at 90% -20%);
     transition: all 0.8s ease-in;
+    z-index: 1;
 
     &.open {
-      clip-path: circle(2200px at 90% -12%);
+      clip-path: circle(2200px);
     }
 
     li a {
-      color: #005dff;
+      color: $appcolor;
       text-decoration: none;
       font-size: 1.5rem;
     }

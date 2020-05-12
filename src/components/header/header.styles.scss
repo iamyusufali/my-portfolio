@@ -1,13 +1,18 @@
+@import '../../_Global_Styles/variables';
+
 header {
   min-height: 35rem;
-  background-color: #005dff;
+  background-color: $appcolor;
   clip-path: polygon(100% 0, 100% 84%, 0 100%, 0 0);
-  padding: 0 2rem;
+  padding: $mobilepadding;
+  // border: 4px solid greenyellow;
 }
 
 main {
+  // border: 4px solid tomato;
   padding-top: 5rem;
   .intro-container {
+    // border: 4px solid white;
     h3,
     h4 {
       color: #fff;
@@ -66,12 +71,31 @@ main {
     justify-content: space-between;
 
     .image-container {
-      height: 10rem;
-      margin-top: 5rem;
-
+      display: flex;
+      align-items: center;
       img {
         display: block;
         width: 15rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 640px) {
+  main {
+    .image-container {
+      img {
+        width: 18rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 720px) {
+  main {
+    .image-container {
+      img {
+        width: 22rem;
       }
     }
   }
