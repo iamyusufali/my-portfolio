@@ -65,3 +65,16 @@ nav {
     }
   }
 }
+
+// Responsive styles
+@media screen and (min-width: 880px) {
+  nav {
+    padding: $tabletpadding;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  nav {
+    padding: $desktoppadding;
+  }
+}
