@@ -1,12 +1,16 @@
 import React from 'react';
-import './App.css';
+
+import Navbar from './components/navbar/navbar.component';
+import Header from './components/header/header.component';
+
+import './App.scss';
 
 function App() {
   return (
-    <header>
-      <h1>Hi, My name is Yusuf Ali</h1>
-      <h3>Right now everything is under construction.</h3>
-    </header>
+    <div>
+      <Navbar />
+      <Header />
+    </div>
   );
 }
 

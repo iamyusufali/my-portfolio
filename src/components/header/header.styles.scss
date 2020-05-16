@@ -1,0 +1,297 @@
+@import '../../_Global_Styles/variables';
+
+header {
+  min-height: 35rem;
+  background-color: $appcolor;
+  clip-path: polygon(100% 0, 100% 84%, 0 100%, 0 0);
+  padding: $mobilepadding;
+
+  main {
+    padding-top: 6rem;
+  }
+}
+
+.intro-container {
+  h3 {
+    color: #fff;
+    font-size: 1.2em;
+
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    opacity: 0.9;
+  }
+
+  h4 {
+    color: #fff;
+    font-size: 1.4em;
+    margin: 0.5em 0;
+    letter-spacing: 0.02em;
+    opacity: 0.9;
+  }
+
+  .name {
+    h1,
+    h2 {
+      color: #fff;
+      font-size: 4.5em;
+      font-weight: 800;
+    }
+
+    h2 {
+      color: #f1ff73;
+    }
+  }
+}
+
+.image-container {
+  img {
+    display: none;
+  }
+}
+
+// Responsive styles
+@media screen and (min-width: 360px) {
+  .intro-container {
+    h4 {
+      letter-spacing: 0.05em;
+    }
+
+    .name {
+      h1,
+      h2 {
+        font-size: 5em;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 440px) {
+  header {
+    min-height: 40rem;
+  }
+
+  .intro-container {
+    h4 {
+      font-size: 1.8em;
+      letter-spacing: 0.06em;
+    }
+
+    .name {
+      h1,
+      h2 {
+        font-size: 5.8em;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 560px) {
+  header {
+    padding: $tabletpadding;
+  }
+
+  .intro-container {
+    h4 {
+      font-size: 1.6em;
+    }
+
+    .name {
+      h1,
+      h2 {
+        font-size: 6em;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  header {
+    min-height: 42rem;
+
+    main {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 8rem;
+    }
+  }
+
+  .image-container {
+    margin-top: 5rem;
+
+    img {
+      display: block;
+      width: 17rem;
+    }
+  }
+}
+
+@media screen and (min-width: 840px) {
+  .intro-container {
+    h4 {
+      font-size: 1.7em;
+      letter-spacing: 0.18em;
+    }
+
+    .name {
+      h1,
+      h2 {
+        font-size: 5.8em;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 940px) {
+  header {
+    min-height: 46rem;
+  }
+
+  .image-container {
+    img {
+      width: 24rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .intro-container {
+    h4 {
+      font-size: 1.8em;
+    }
+
+    .name {
+      h1,
+      h2 {
+        font-size: 6.5em;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1060px) {
+  header {
+    min-height: 50rem;
+  }
+
+  .intro-container {
+    h4 {
+      font-size: 1.8em;
+    }
+
+    .name {
+      h1,
+      h2 {
+        font-size: 6.5em;
+      }
+    }
+  }
+
+  .image-container {
+    img {
+      width: 28rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .intro-container {
+    h3 {
+      font-size: 1.5em;
+    }
+
+    h4 {
+      font-size: 2em;
+    }
+
+    .name {
+      h1,
+      h2 {
+        font-size: 6.5em;
+      }
+    }
+  }
+
+  .image-container {
+    img {
+      width: 26rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  header {
+    padding: $desktoppadding;
+    min-height: 58rem;
+
+    main {
+      padding-top: 10rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1420px) {
+  .intro-container {
+    h4 {
+      font-size: 2.2em;
+    }
+
+    .name {
+      h1,
+      h2 {
+        font-size: 7.2em;
+      }
+    }
+  }
+
+  .image-container {
+    img {
+      width: 32rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1520px) {
+  .intro-container {
+    h4 {
+      font-size: 2.4em;
+    }
+
+    .name {
+      h1,
+      h2 {
+        font-size: 7.6em;
+      }
+    }
+  }
+
+  .image-container {
+    img {
+      width: 36rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1740px) {
+  .intro-container {
+    h3 {
+      font-size: 1.8em;
+    }
+
+    h4 {
+      font-size: 2.6em;
+    }
+
+    .name {
+      h1,
+      h2 {
+        font-size: 7.8em;
+      }
+    }
+  }
+
+  .image-container {
+    img {
+      width: 40rem;
+    }
+  }
+}
