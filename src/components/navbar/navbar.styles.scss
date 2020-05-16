@@ -52,7 +52,7 @@ nav {
     top: 0;
     right: 0;
     margin: 4% 10% 0;
-    z-index: 2;
+    z-index: 5;
 
     &:hover {
       cursor: pointer;
@@ -78,29 +78,22 @@ nav {
     background-color: #ffe57f;
     clip-path: circle(20px at 95% -10%);
     transition: all 0.9s ease-in;
+    z-index: 4;
 
     .nav-link {
       opacity: 0;
 
+      &:nth-child(odd):hover {
+        background-color: #1565c0;
+
+        a {
+          color: #fff;
+        }
+      }
+
       a {
         font-size: 2em;
       }
-    }
-
-    .nav-link:nth-child(1) {
-      transition: all 0.5s ease-in;
-    }
-
-    .nav-link:nth-child(2) {
-      transition: all 0.8s ease-in;
-    }
-
-    .nav-link:nth-child(3) {
-      transition: all 0.11s ease-in;
-    }
-
-    .nav-link:nth-child(4) {
-      transition: all 0.14s ease-in;
     }
 
     &.open {

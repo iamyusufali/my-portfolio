@@ -57,8 +57,7 @@ main {
 }
 
 // Responsive styles
-
-@media screen and (max-width: 1660px) {
+@media screen and (max-width: 1680px) {
   .image-container {
     img {
       width: 420px;
@@ -72,8 +71,21 @@ main {
   }
 
   .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    height: 380px;
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    box-shadow: 0px 5px 30px -15px rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    z-index: 1;
+
     img {
-      display: none;
+      width: 300px;
+      height: 300px;
     }
   }
 }
