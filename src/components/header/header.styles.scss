@@ -5,23 +5,28 @@ header {
   background-color: $appcolor;
   clip-path: polygon(100% 0, 100% 84%, 0 100%, 0 0);
   padding: $mobilepadding;
+
   main {
-    padding-top: 5rem;
+    padding-top: 6rem;
   }
 }
 
 .intro-container {
-  h3,
-  h4 {
+  h3 {
     color: #fff;
     font-size: 1.2em;
+
+    letter-spacing: 0.15em;
     margin-bottom: 0.5em;
     opacity: 0.9;
   }
 
   h4 {
+    color: #fff;
     font-size: 1.4em;
-    margin-top: 0.5em;
+    margin: 0.5em 0;
+    letter-spacing: 0.02em;
+    opacity: 0.9;
   }
 
   .name {
@@ -48,7 +53,7 @@ header {
 @media screen and (min-width: 360px) {
   .intro-container {
     h4 {
-      font-size: 1.6em;
+      letter-spacing: 0.05em;
     }
 
     .name {
@@ -60,7 +65,7 @@ header {
   }
 }
 
-@media screen and (min-width: 460px) {
+@media screen and (min-width: 440px) {
   header {
     min-height: 40rem;
   }
@@ -68,105 +73,26 @@ header {
   .intro-container {
     h4 {
       font-size: 1.8em;
+      letter-spacing: 0.06em;
     }
 
     .name {
       h1,
       h2 {
-        font-size: 5.5em;
+        font-size: 5.8em;
       }
     }
   }
 }
 
 @media screen and (min-width: 560px) {
-  main {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .intro-container {
-    h4 {
-      font-size: 1.4em;
-    }
-
-    .name {
-      h1,
-      h2 {
-        font-size: 5em;
-      }
-    }
-  }
-
-  .image-container {
-    margin-top: 5rem;
-
-    img {
-      display: block;
-      width: 15rem;
-    }
-  }
-}
-
-@media screen and (min-width: 620px) {
-  .intro-container {
-    h4 {
-      font-size: 1.6em;
-    }
-
-    .name {
-      h1,
-      h2 {
-        font-size: 5.2em;
-      }
-    }
-  }
-
-  .image-container {
-    img {
-      width: 18rem;
-    }
-  }
-}
-
-@media screen and (min-width: 720px) {
-  .image-container {
-    img {
-      width: 23rem;
-    }
-  }
-}
-
-@media screen and (min-width: 820px) {
-  .intro-container {
-    h4 {
-      font-size: 1.4em;
-    }
-
-    .name {
-      h1,
-      h2 {
-        font-size: 5em;
-      }
-    }
-  }
-
-  .image-container {
-    img {
-      width: 25rem;
-    }
-  }
-}
-
-@media screen and (min-width: 880px) {
   header {
-    min-height: 45rem;
     padding: $tabletpadding;
   }
 
   .intro-container {
     h4 {
-      font-size: 1.8em;
+      font-size: 1.6em;
     }
 
     .name {
@@ -178,43 +104,84 @@ header {
   }
 }
 
-@media screen and (min-width: 940px) {
+@media screen and (min-width: 700px) {
   header {
-    min-height: 44rem;
+    min-height: 42rem;
+
+    main {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 8rem;
+    }
   }
 
-  .intro-container {
-    h3 {
-      font-size: 1.4em;
-    }
+  .image-container {
+    margin-top: 5rem;
 
+    img {
+      display: block;
+      width: 17rem;
+    }
+  }
+}
+
+@media screen and (min-width: 840px) {
+  .intro-container {
     h4 {
-      font-size: 2em;
+      font-size: 1.7em;
+      letter-spacing: 0.18em;
     }
 
     .name {
       h1,
       h2 {
-        font-size: 6.4em;
+        font-size: 5.8em;
       }
     }
   }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 940px) {
   header {
-    min-height: 48rem;
+    min-height: 46rem;
   }
 
+  .image-container {
+    img {
+      width: 24rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1020px) {
   .intro-container {
     h4 {
-      font-size: 2em;
+      font-size: 1.8em;
     }
 
     .name {
       h1,
       h2 {
-        font-size: 7em;
+        font-size: 6.5em;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1060px) {
+  header {
+    min-height: 50rem;
+  }
+
+  .intro-container {
+    h4 {
+      font-size: 1.8em;
+    }
+
+    .name {
+      h1,
+      h2 {
+        font-size: 6.5em;
       }
     }
   }
@@ -227,6 +194,42 @@ header {
 }
 
 @media screen and (min-width: 1100px) {
+  .intro-container {
+    h3 {
+      font-size: 1.5em;
+    }
+
+    h4 {
+      font-size: 2em;
+    }
+
+    .name {
+      h1,
+      h2 {
+        font-size: 6.5em;
+      }
+    }
+  }
+
+  .image-container {
+    img {
+      width: 26rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  header {
+    padding: $desktoppadding;
+    min-height: 58rem;
+
+    main {
+      padding-top: 10rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1420px) {
   .intro-container {
     h4 {
       font-size: 2.2em;
@@ -242,78 +245,28 @@ header {
 
   .image-container {
     img {
-      width: 30rem;
-    }
-  }
-}
-
-@media screen and (min-width: 1240px) {
-  .intro-container {
-    h3 {
-      font-size: 1.6em;
-    }
-
-    h4 {
-      font-size: 2em;
-    }
-
-    .name {
-      h1,
-      h2 {
-        font-size: 7em;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  header {
-    padding: $desktoppadding;
-  }
-}
-
-@media screen and (min-width: 1420px) {
-  .intro-container {
-    h4 {
-      font-size: 2.5em;
-    }
-
-    .name {
-      h1,
-      h2 {
-        font-size: 7.5em;
-      }
-    }
-  }
-
-  .image-container {
-    img {
-      width: 34rem;
+      width: 32rem;
     }
   }
 }
 
 @media screen and (min-width: 1520px) {
-  header {
-    min-height: 56rem;
-  }
-
   .intro-container {
     h4 {
-      font-size: 2.6em;
+      font-size: 2.4em;
     }
 
     .name {
       h1,
       h2 {
-        font-size: 8em;
+        font-size: 7.6em;
       }
     }
   }
 
   .image-container {
     img {
-      width: 40rem;
+      width: 36rem;
     }
   }
 }
@@ -325,20 +278,20 @@ header {
     }
 
     h4 {
-      font-size: 3em;
+      font-size: 2.6em;
     }
 
     .name {
       h1,
       h2 {
-        font-size: 8.4em;
+        font-size: 7.8em;
       }
     }
   }
 
   .image-container {
     img {
-      width: 44rem;
+      width: 40rem;
     }
   }
 }
