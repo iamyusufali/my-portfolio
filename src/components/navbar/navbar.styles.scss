@@ -43,7 +43,7 @@ nav {
 }
 
 // Responisve styles
-@media screen and (max-width: 1480px) {
+@media screen and (max-width: 1560px) {
   .hamburger-icon {
     display: flex;
     flex-direction: column;
@@ -51,7 +51,7 @@ nav {
     position: fixed;
     top: 0;
     right: 0;
-    margin: 4% 10% 0;
+    margin: 3rem 10% 0;
     z-index: 5;
 
     &:hover {
