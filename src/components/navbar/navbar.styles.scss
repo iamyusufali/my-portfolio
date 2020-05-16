@@ -70,13 +70,13 @@ nav {
 }
 
 // Responsive styles
-@media screen and (min-width: 880px) {
+@media screen and (min-width: 560px) {
   nav {
     padding: $tabletpadding;
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   nav {
     padding: $desktoppadding;
   }
