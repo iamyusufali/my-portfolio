@@ -12,10 +12,12 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="hamburger-icon" onClick={() => setNavOpen(!navOpen)}>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
+      <div className="hamburger-box">
+        <div className="hamburger-icon" onClick={() => setNavOpen(!navOpen)}>
+          <div className="line"></div>
+          <div className="line"></div>
+          <div className="line"></div>
+        </div>
       </div>
       <nav className={navClass}>
         <div className="nav-link">
