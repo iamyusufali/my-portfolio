@@ -11,6 +11,12 @@ nav {
     padding: 0.5rem 1.5rem;
     transition: all 0.3s ease-out;
 
+    a {
+      font-size: 1.3em;
+      color: #37474f;
+      text-decoration: none;
+    }
+
     &:nth-child(odd):hover {
       cursor: pointer;
       background-color: #ffe57f;
@@ -30,11 +36,6 @@ nav {
         color: #fff;
       }
     }
-  }
-
-  a {
-    font-size: 1.3em;
-    color: #37474f;
   }
 }
 
