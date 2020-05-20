@@ -1,8 +1,5 @@
-// My Colors
-// Blue-Shade: #1565C0,
-// Grey-Shade: #37474F,
-// Pink-Shade: #FF5252,
-// Yellow-Shade: #FFE57F
+@import '../../_sass-variables/_fonts';
+@import '../../_sass-variables/_colors';
 
 header {
   width: 100%;
@@ -13,7 +10,7 @@ header {
     display: flex;
     background-color: #fff;
     margin: auto;
-    margin-top: 120px;
+    margin-top: calc(var(--m-scale) * 1em);
   }
 }
 
@@ -24,28 +21,29 @@ header {
   flex: 2;
 
   h3 {
-    font-size: 2em;
+    font-size: var(--font-m);
     font-weight: 300;
     letter-spacing: 5px;
-    color: #37474f;
+    color: $greyshade;
   }
 
   h1 {
-    font-size: 7em;
-    color: #1565c0;
+    font-size: var(--font-l);
+    color: $blueshade;
     margin: 2rem 0;
     letter-spacing: 5px;
   }
 
   span {
-    color: #ff5252;
+    display: block;
+    color: $pinkshade;
   }
 
   h4 {
-    font-size: 2.5em;
+    font-size: var(--font-m);
     font-weight: 300;
     letter-spacing: 7px;
-    color: #37474f;
+    color: $greyshade;
   }
 }
 
@@ -67,21 +65,10 @@ header {
   }
 }
 
-@media screen and (max-width: 1560px) {
+@media screen and (min-width: 1560px) {
   .text-container {
-    h3 {
-      font-size: 2em;
-    }
-
-    h1 {
-      font-size: 7em;
-    }
-
     span {
-      display: block;
-    }
-    h4 {
-      font-size: 2em;
+      display: inline;
     }
   }
 }
@@ -112,20 +99,6 @@ header {
     align-items: flex-start;
   }
 
-  .text-container {
-    h3 {
-      font-size: 1.6em;
-    }
-
-    h1 {
-      font-size: 6em;
-    }
-
-    h4 {
-      font-size: 1.6em;
-    }
-  }
-
   .image-container {
     width: 200px;
     height: 200px;
@@ -142,20 +115,6 @@ header {
     }
   }
 
-  .text-container {
-    h3 {
-      font-size: 1.4em;
-    }
-
-    h1 {
-      font-size: 5.6em;
-    }
-
-    h4 {
-      font-size: 1.4em;
-    }
-  }
-
   .image-container {
     width: 160px;
     height: 160px;
@@ -169,22 +128,6 @@ header {
 
     img {
       width: 100%;
-    }
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .text-container {
-    h3 {
-      font-size: 1em;
-    }
-
-    h1 {
-      font-size: 5em;
-    }
-
-    h4 {
-      font-size: 1em;
     }
   }
 }
