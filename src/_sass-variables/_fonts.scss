@@ -1,0 +1,23 @@
+:root {
+  --base: 1.3rem;
+  --scale: 1.5;
+  --m-scale: 1.5;
+  --font-m: calc(0.8rem * var(--scale));
+  --font-l: calc(var(--base) * var(--scale) * var(--scale) * var(--scale));
+
+  @media (min-width: 440px) {
+    --scale: 1.6;
+  }
+
+  @media (min-width: 530px) {
+    --scale: 1.7;
+  }
+
+  @media (min-width: 615px) {
+    --scale: 1.82;
+  }
+
+  @media (min-width: 745px) {
+    --m-scale: 4;
+  }
+}
