@@ -20,6 +20,9 @@ const Navbar = () => {
         </div>
       </div>
       <nav className={navClass}>
+        <div className="logo">
+          <h2>Yusuf Ali</h2>
+        </div>
         <div className="nav-link">
           <a href="/">About Me</a>
         </div>

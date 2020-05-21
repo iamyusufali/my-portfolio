@@ -3,15 +3,15 @@
 
 header {
   width: 100%;
-  height: 650px;
+  height: 700px;
+}
 
-  main {
-    width: 80%;
-    display: flex;
-    background-color: #fff;
-    margin: auto;
-    margin-top: calc(var(--m-scale) * 1em);
-  }
+main {
+  width: 80%;
+  display: flex;
+  background-color: #fff;
+  margin: auto;
+  margin-top: 5rem;
 }
 
 .text-container {
@@ -20,28 +20,20 @@ header {
   justify-content: center;
   flex: 2;
 
-  h3 {
-    font-size: var(--font-m);
-    font-weight: 300;
-    letter-spacing: 5px;
-    color: $greyshade;
-  }
-
   h1 {
     font-size: var(--font-l);
-    color: $blueshade;
+    color: $greyshade;
     margin: 2rem 0;
     letter-spacing: 5px;
   }
 
   span {
-    display: block;
     color: $pinkshade;
   }
 
-  h4 {
+  h2 {
     font-size: var(--font-m);
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 7px;
     color: $greyshade;
   }
@@ -65,10 +57,16 @@ header {
   }
 }
 
-@media screen and (min-width: 1560px) {
+@media (min-width: 1560px) {
+  main {
+    margin-top: 8rem;
+  }
+}
+
+@media screen and (max-width: 1340px) {
   .text-container {
     span {
-      display: inline;
+      display: block;
     }
   }
 }
@@ -83,6 +81,7 @@ header {
     position: fixed;
     top: 5%;
     right: 8%;
+    background-color: #fff;
     box-shadow: 0px 5px 30px -15px rgba(0, 0, 0, 0.8);
     border-radius: 50%;
     z-index: 1;
@@ -95,29 +94,9 @@ header {
 }
 
 @media screen and (max-width: 920px) {
-  main {
-    align-items: flex-start;
-  }
-
   .image-container {
     width: 200px;
     height: 200px;
-  }
-}
-
-@media screen and (max-width: 740px) {
-  main {
-    height: 600px;
-
-    .text-container {
-      justify-content: flex-start;
-      padding-top: 2rem;
-    }
-  }
-
-  .image-container {
-    width: 160px;
-    height: 160px;
   }
 }
 

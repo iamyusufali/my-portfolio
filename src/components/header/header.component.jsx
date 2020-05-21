@@ -8,11 +8,10 @@ const Header = () => {
     <header>
       <main>
         <div className="text-container">
-          <h3>Hello, I'm</h3>
           <h1>
-            Yusuf <span>Ali</span>
+            I'm <span>Yusuf.</span>
           </h1>
-          <h4>Front-end Engineer</h4>
+          <h2>Front-end Engineer</h2>
         </div>
         <div className="image-container">
           <img alt="developer" src={Logo} />

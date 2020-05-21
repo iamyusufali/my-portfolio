@@ -1,23 +1,22 @@
 :root {
   --base: 1.3rem;
   --scale: 1.5;
-  --m-scale: 1.5;
-  --font-m: calc(0.8rem * var(--scale));
+  --main-margin: 5rem;
+  --font-m: 1.2rem;
   --font-l: calc(var(--base) * var(--scale) * var(--scale) * var(--scale));
 
   @media (min-width: 440px) {
     --scale: 1.6;
+    --font-m: 1.3rem;
   }
 
   @media (min-width: 530px) {
     --scale: 1.7;
+    --font-m: 1.5rem;
   }
 
-  @media (min-width: 615px) {
-    --scale: 1.82;
-  }
-
-  @media (min-width: 745px) {
-    --m-scale: 4;
+  @media (min-width: 1560px) {
+    --scale: 1.8;
+    --font-m: 2.2rem;
   }
 }
