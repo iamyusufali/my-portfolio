@@ -1,3 +1,5 @@
+@import '../../_sass-variables/colors';
+
 nav {
   width: 80%;
   height: 80px;
@@ -7,40 +9,53 @@ nav {
   justify-content: space-between;
   align-items: center;
 
-  .nav-link {
-    padding: 0.5rem 1.5rem;
-    transition: all 0.3s ease-out;
+  .logo {
+    margin-right: 25rem;
+
+    h2 {
+      color: $greyshade;
+    }
+  }
+}
+
+.nav-link {
+  padding: 0.5rem 1.5rem;
+  transition: all 0.3s ease-out;
+
+  a {
+    font-size: 1em;
+    font-weight: 500;
+    color: $greyshade;
+    text-decoration: none;
+  }
+
+  &:nth-child(odd):hover {
+    cursor: pointer;
+    background-color: $yellowshade;
+    border-radius: 0.3rem;
 
     a {
-      font-size: 1.3em;
       color: #37474f;
-      text-decoration: none;
     }
+  }
 
-    &:nth-child(odd):hover {
-      cursor: pointer;
-      background-color: #ffe57f;
-      border-radius: 0.3rem;
+  &:nth-child(even):hover {
+    cursor: pointer;
+    background-color: $pinkshade;
+    border-radius: 0.3rem;
 
-      a {
-        color: #37474f;
-      }
-    }
-
-    &:nth-child(even):hover {
-      cursor: pointer;
-      background-color: #ff5252;
-      border-radius: 0.3rem;
-
-      a {
-        color: #fff;
-      }
+    a {
+      color: #fff;
     }
   }
 }
 
 // Responisve styles
-@media screen and (max-width: 1560px) {
+@media screen and (max-width: 1340px) {
+  .logo {
+    display: none;
+  }
+
   .hamburger-box {
     width: 80%;
     height: 80px;
@@ -65,7 +80,7 @@ nav {
     .line {
       width: 100%;
       height: 2px;
-      background-color: #37474f;
+      background-color: $greyshade;
       margin-bottom: 9px;
     }
   }
@@ -79,43 +94,41 @@ nav {
     margin-top: 0;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: #ffe57f;
+    background-color: $yellowshade;
     clip-path: circle(20px at 0% -10%);
     transition: all 0.9s ease-in;
     z-index: 4;
+  }
 
-    .nav-link {
-      opacity: 0;
+  .nav-link {
+    opacity: 0;
 
-      &:nth-child(odd):hover {
-        background-color: #1565c0;
-
-        a {
-          color: #fff;
-        }
-      }
+    &:nth-child(odd):hover {
+      background-color: $blueshade;
 
       a {
-        font-size: 2em;
+        color: #fff;
       }
     }
 
-    &.open {
-      clip-path: circle(1800px at 95% -10%);
+    a {
+      font-size: 2em;
+    }
+  }
 
-      .nav-link {
-        opacity: 1;
-      }
+  &.open {
+    clip-path: circle(1800px at 95% -10%);
+
+    .nav-link {
+      opacity: 1;
     }
   }
 }
 
 @media screen and (max-width: 1280px) {
-  nav {
-    .nav-link {
-      a {
-        font-size: 1.5em;
-      }
+  .nav-link {
+    a {
+      font-size: 1.5em;
     }
   }
 }
@@ -129,11 +142,9 @@ nav {
     }
   }
 
-  nav {
-    .nav-link {
-      a {
-        font-size: 1em;
-      }
+  .nav-link {
+    a {
+      font-size: 1em;
     }
   }
 }
