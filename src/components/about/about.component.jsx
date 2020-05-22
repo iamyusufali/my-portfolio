@@ -1,27 +1,28 @@
 import React from 'react';
 
+import shapeOne from '../../img/shapeOne.svg';
+import shapeTwo from '../../img/shapeTwo.svg';
+import shapeThree from '../../img/shapeThree.svg';
+
 import './about.styles.scss';
 
 const About = () => {
   return (
     <section>
-      <div className="about">
-        <div className="title">
-          <h1>Know Me</h1>
-          <div />
-        </div>
-        <div className="content">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-      </div>
+      <article>
+        <h2>About Me</h2>
+        <p>
+          I'm a 22y old self-taught Front-end Engineer 👨‍💻 from India, enjoying
+          every aspect of programming and always experimenting with new stuff. I
+          can design all kind of websites and do some magic 🧙‍♀️ with Javascript.
+          I'm from a non-tech background and have passion to explore new
+          technologies 🤖 and play with them. I also play football ⚽ and love
+          watching it.
+        </p>
+        <img className="shape-one" alt="" src={shapeOne} />
+        <img className="shape-two" alt="" src={shapeTwo} />
+        <img className="shape-three" alt="" src={shapeThree} />
+      </article>
     </section>
   );
 };
