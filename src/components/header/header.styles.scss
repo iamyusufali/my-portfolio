@@ -95,12 +95,19 @@ main {
 
 @media screen and (max-width: 920px) {
   .image-container {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
   }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 660px) {
+  .image-container {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 580px) {
   .image-container {
     width: 120px;
     height: 120px;
