@@ -10,7 +10,7 @@ const About = () => {
   return (
     <section>
       <article>
-        <h1>About Me</h1>
+        <h2>About Me</h2>
         <p>
           I'm a 22y old self-taught Front-end Engineer 👨‍💻 from India, enjoying
           every aspect of programming and always experimenting with new stuff. I
