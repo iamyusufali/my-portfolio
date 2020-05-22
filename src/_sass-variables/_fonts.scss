@@ -2,12 +2,15 @@
   --base: 1.3rem;
   --scale: 1.5;
   --main-margin: 5rem;
-  --font-m: 1.2rem;
+  --font-m: 1rem;
   --font-l: calc(var(--base) * var(--scale) * var(--scale) * var(--scale));
+
+  @media (min-width: 400px) {
+    --font-m: 1.2rem;
+  }
 
   @media (min-width: 440px) {
     --scale: 1.6;
-    --font-m: 1.3rem;
   }
 
   @media (min-width: 530px) {
