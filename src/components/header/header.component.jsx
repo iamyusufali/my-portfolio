@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Logo from '../../img/developer.svg';
 import './header.styles.scss';
 
 const Header = () => {
@@ -14,7 +13,10 @@ const Header = () => {
           <h2>Front-end Engineer</h2>
         </div>
         <div className="image-container">
-          <img alt="developer" src={Logo} />
+          <img
+            alt="developer"
+            src="https://my-portfolio-image.s3.ap-south-1.amazonaws.com/developer.svg"
+          />
         </div>
       </main>
     </header>
