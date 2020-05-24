@@ -64,7 +64,7 @@ nav {
     width: 80%;
     height: 80px;
     margin: auto;
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -142,11 +142,23 @@ nav {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .hamburger-box {
+    justify-content: flex-end;
+  }
+}
+
 @media screen and (max-width: 420px) {
   .hamburger-box {
     .hamburger-icon {
-      width: 60px;
-      height: 60px;
+      width: 55px;
+      height: 55px;
     }
+  }
+}
+
+@media screen and (max-height: 480px) {
+  .hamburger-box {
+    justify-content: flex-end;
   }
 }
