@@ -3,7 +3,8 @@
 
 header {
   width: 100%;
-  height: 700px;
+  max-height: 700px;
+  padding: 4rem 0 10rem 0;
 }
 
 main {
@@ -11,7 +12,6 @@ main {
   display: flex;
   background-color: #fff;
   margin: auto;
-  margin-top: 5rem;
 }
 
 .text-container {
@@ -54,12 +54,6 @@ main {
     img {
       width: 420px;
     }
-  }
-}
-
-@media (min-width: 1560px) {
-  main {
-    margin-top: 8rem;
   }
 }
 
@@ -118,19 +112,17 @@ main {
   }
 }
 
-@media screen and (max-width: 400px) {
-  main {
-    margin-top: 2rem;
+@media screen and (max-width: 500px) {
+  .image-container {
+    display: none;
   }
+}
 
+@media screen and (max-width: 400px) {
   .text-container {
     h2 {
       letter-spacing: 5px;
     }
-  }
-
-  .image-container {
-    display: none;
   }
 }
 
