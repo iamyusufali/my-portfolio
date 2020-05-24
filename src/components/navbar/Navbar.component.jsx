@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import { FiMenu, FiX } from 'react-icons/fi';
+
 import './navbar.styles.scss';
 
 const Navbar = () => {
@@ -14,9 +16,11 @@ const Navbar = () => {
     <div>
       <div className="hamburger-box">
         <div className="hamburger-icon" onClick={() => setNavOpen(!navOpen)}>
-          <div className="line"></div>
-          <div className="line"></div>
-          <div className="line"></div>
+          {!navOpen ? (
+            <FiMenu size="100%" color="#37474f" />
+          ) : (
+            <FiX size="100%" color="#37474f" />
+          )}
         </div>
       </div>
       <nav className={navClass}>

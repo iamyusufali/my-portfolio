@@ -1,5 +1,9 @@
 @import '../../_sass-variables/colors';
 
+.hamburger-box {
+  display: none;
+}
+
 nav {
   width: 80%;
   height: 80px;
@@ -67,10 +71,6 @@ nav {
   }
 
   .hamburger-icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
     width: 65px;
     height: 65px;
     padding: 0.8rem 0;
@@ -83,12 +83,6 @@ nav {
 
     &:hover {
       cursor: pointer;
-    }
-
-    .line {
-      width: 32px;
-      height: 2px;
-      background-color: $greyshade;
     }
   }
 
@@ -144,6 +138,15 @@ nav {
   .nav-link {
     a {
       font-size: 1em;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .hamburger-box {
+    .hamburger-icon {
+      width: 60px;
+      height: 60px;
     }
   }
 }
