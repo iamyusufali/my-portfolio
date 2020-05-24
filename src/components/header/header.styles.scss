@@ -4,7 +4,7 @@
 header {
   width: 100%;
   max-height: 700px;
-  padding: 4rem 0 10rem 0;
+  padding: 8rem 0 10rem 0;
 }
 
 main {
@@ -50,6 +50,10 @@ main {
 
 // Responsive styles
 @media screen and (max-width: 1680px) {
+  header {
+    padding: 5rem 0 8rem 0;
+  }
+
   .image-container {
     img {
       width: 420px;
@@ -113,6 +117,10 @@ main {
 }
 
 @media screen and (max-width: 500px) {
+  header {
+    padding: 2rem 0 5rem 0;
+  }
+
   .image-container {
     display: none;
   }
